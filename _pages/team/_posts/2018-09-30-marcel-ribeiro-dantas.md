@@ -2,7 +2,7 @@
 layout: member
 category: phd-student
 title: Wu ZiLong
-image: wuzilong.jpg
+image: wuzilong.JPG
 role: PhD Student
 permalink: 'team/marcel-ribeiro-dantas'
 social:
