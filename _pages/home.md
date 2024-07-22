@@ -1,36 +1,23 @@
 ---
-title: RT2 Lab
+title: Q03-YANG LAB
 layout: homelay
 permalink: /
 ---
 
-The “Residual Tumor and Response to Treatment Laboratory” has four main goals.
+Our research focuses on characterizing and manipulating quantum materials at the atomic scale, using a versatile quantum sensing tool combining two imaging methods: electron spin resonance (ESR) and scanning tunneling microscopy (STM). The **ESR-STM** provides a unique access to the quantum materials with energy resolution beyond the thermal limit and with atomic-scale spatial resolution. Our goal is to harness these quantum properties for quantum sensing and quantum information processing. 
 
-**Identification of clinical and pathological factors correlated with the long-term prognosis of TNBC and HER2 positive breast cancer patients treated by neoadjuvant chemotherapy.**
+**Electron Spin Resonance with Scanning Tunneling Microscope (电子自旋共振扫描隧道显微镜)**
 
-We have built a retrospective clinical, pathological and radiological database
-of breast cancer patients treated by neoadjuvant chemotherapy at Institut
-Curie since 2002. In triple-negative breast carcinoma (TNBC) we have
-highlighted a strong association between the lymph node involvement after
-neoadjuvant chemotherapy (NAC) and a poor prognosis outcome. We concluded
-that clinical trials should be implemented for high-risk patients after NAC
-(pN+, Elston Ellis Grade 3 and non menopausal status) to validate new
-therapeutic solutions.
+Performing electron spin resonance (ESR) spectroscopy in STM has two outstanding advantages over the conventional STM spectroscopy. First, the energy resolution of the ESR-STM technique is ~1,000 times better than that of the conventional STM spectroscopy (for example, inelastic electron tunneling spectroscopy) which is intrinsically thermally limited. Second, the ESR-STM gives access to the phase information of the quantum states and allows the coherent control of the quantum states by generating quantum superpositions and entanglement with exquisite precision.
 
-**Identification of robust biological-network driven gene-expression classification of TNBC and HER2 positive breast cancer to define new therapeutic interventions.**
+The ability to drive ESR of individual atoms using STM provided a major step forward in sensing and manipulating magnetism at the atomic scale. The atomic-scale spatial resolution and the ultrahigh energy resolution of ESR-STM has allowed the measurement of the magnetic dipolar interaction between two atoms placed a few nanometers apart on a surface, the detection of hyperfine interaction between electronic and nuclear spins of individual atoms, as well as the exploration of quantum fluctuations in designed spin arrays having tailored geometries. By implementing pulsed ESR, coherent spin manipulation of magnetic atoms and engineered atomic dimers on surfaces have been achieved by demonstrating Rabi oscillations, Ramsey fringes and spin echoes, opening the door to a powerful suite of pulsed techniques that can extend single-atom sensing capabilities. Coherent control of spins arranged with atomic precision provides a solid-state platform for quantum simulation of many-body systems.
 
-We identified a robust six metagene classification across 1125 TNBC
-gene-expression profiles. An immune metagene is highly correlated to the
-prognosis of these patients. These findings open up interesting opportunities
-for the development of new therapeutic interventions in TNBC.
+**References**
 
-**Identification of dynamic markers of resistance in TNBC and HER2 positive breast cancer patients treated by neoadjuvant chemotherapy.**
+[1]  S. Baumann et al. Science 350, 417 (2015). 
 
-Using RNAsequencing, Whole Exome Sequencing and RPPA we are studying matched
-pre-treatment primary tumor biopsy and residual tumor after neoadjuvant
-treatment to identify modifications associated to resistance to
-systemic treatment.
+[2]  F. Natterer et al. Nature 543, 226 (2017). 
 
-**High-througput screening of TNBC and HER2 positive breast cancer cell lines.**
+[3]  K. Yang et al. Nat. Commun. 12, 993 (2021). 
 
-In order to identify efficient drugs to treat cancer patients, large screening programs have been launched with different setting of drugs and cancer cell lines (CCLE and CGP projects). We are developping 2D and 3D (magnetic levitation) breast cancer cell lines drug screening program with FDA approved drugs libraries.
+[4]  K. Yang et al. Science 366, 509 (2019).
