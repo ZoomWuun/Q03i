@@ -1,10 +1,10 @@
 ---
 layout: member
 category: staff
-title: 'Anne Sophie Hamy Petit'
-image: 'anne-sophie.jpeg'
+title: 'Peng Fan'
+image: 'Peng Fan.jpg'
 role: Lab co-director
-permalink: 'team/anne-sophie-hamy-petit'
+permalink: 'team/peng-fan'
 social:
     twitter: https://twitter.com/ashamypetit
     linkedin: https://linkedin.com/in/anne-sophie-hamy-petit-7a65b339
