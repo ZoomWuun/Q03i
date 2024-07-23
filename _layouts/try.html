@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
+    <title>Try</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,34 +35,42 @@
         .publications a:hover {
             text-decoration: underline;
         }
-        .navbar {
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            padding: 10px 20px;
-        }
-        .navbar a {
-            color: #000;
-            text-decoration: none;
-            margin-right: 20px;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <header class="site-header" role="banner">
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-sm navbar-light px-0">
             <!-- Navbar brand -->
             <a class="navbar-brand" href="/">Q03 YANG LAB</a>
+            <!-- Navbar toggler button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!-- Navbar links -->
-            <a href="/team">Team</a>
-            <a href="/publications">Publications</a>
-            <a href="/facilities">Facilities</a>
-            <a href="/openings">Openings</a>
-            <a href="try.html">try</a> <!-- 确保路径正确 -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a class="nav-link" href="/team">Team</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/facilities">Facilities</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/openings">Openings</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="try.html">try</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="container">
-        <h1>Publications</h1>
+        <h1>Try Page</h1>
         <div class="publications">
             [19] H. Wang#, P. Fan#, J. Chen#, L. Jiang, H.-J. Gao, J. L. Lado* and <u>K. Yang</u>*, Realizing topological quantum magnets with atomic spins on surfaces. <a href="https://arxiv.org/abs/2403.14145" target="_blank">arXiv:2403.14145 (2024)</a>
 
