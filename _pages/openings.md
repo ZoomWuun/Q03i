@@ -6,7 +6,7 @@ permalink: /openings/
 
 中国科学院物理研究所杨锴研究组**长期招收博士生、硕士生和博士后**，欢迎具有凝聚态物理、纳米物理和量子计算等研究背景的学生学者加盟，待遇优厚！
 
-招收推免研究生，欢迎加入！
+<p style="color:red;">招收推免研究生，欢迎加入！</p>
 
 有意者请发送简历至 kaiyang@iphy.ac.cn
 
@@ -38,6 +38,6 @@ permalink: /openings/
 
 **杨锴老师的更多信息，请参考：**
 
-物理所个人主页：http://www.iop.cas.cn/rcjy/tpyjy/?id=1275
+物理所个人主页: [http://www.iop.cas.cn/rcjy/tpyjy/?id=1275](http://www.iop.cas.cn/rcjy/tpyjy/?id=1275){:target="_blank"}
 
-物理所研究生教育公众号导师介绍：https://mp.weixin.qq.com/s/_V8Frsk8nwDU8Jtaowcnpw 
+物理所研究生教育公众号导师介绍[https://mp.weixin.qq.com/s/_V8Frsk8nwDU8Jtaowcnpw](https://mp.weixin.qq.com/s/_V8Frsk8nwDU8Jtaowcnpw){:target="_blank"}
