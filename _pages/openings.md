@@ -40,9 +40,11 @@ permalink: /openings/
 
 物理所个人主页: [http://www.iop.cas.cn/rcjy/tpyjy/?id=1275](http://www.iop.cas.cn/rcjy/tpyjy/?id=1275){:target="_blank"}
 
-物理所研究生教育公众号导师介绍[https://mp.weixin.qq.com/s/_V8Frsk8nwDU8Jtaowcnpw](https://mp.weixin.qq.com/s/_V8Frsk8nwDU8Jtaowcnpw){:target="_blank"}
+物理所研究生教育公众号导师介绍: [https://mp.weixin.qq.com/s/_V8Frsk8nwDU8Jtaowcnpw](https://mp.weixin.qq.com/s/_V8Frsk8nwDU8Jtaowcnpw){:target="_blank"}
+
 
 ---
+
 
 **Positions in Prof. Yang's Group**
 
