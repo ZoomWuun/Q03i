@@ -23,19 +23,26 @@ permalink: /facilities/
     }
 
     .facility img {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
         width: 40%; /* 图片一栏占40% */
-        flex: 0 0 40%;
+        flex: 0 0 50%;
     }
 
-    .facility-text {
-        flex: 0 0 60%; /* 文字一栏占60% */
+    .facility-text h3{
+        flex: 0 0 50%; /* 文字一栏占50% */
         padding-left: 20px;
         margin: 0 0 10px 0;
         color: #2a6496;
         font-size: 24px; /* 默认字体大小 */
     }
+
+    .facility-text{
+        flex: 0 0 50%; /* 文字一栏占50% */
+        padding-left: 20px;
+        margin: 0 0 10px 0;
+
+        }
 
     /* 单栏设计：小屏幕设备 */
     @media (max-width: 768px) {
@@ -57,10 +64,14 @@ permalink: /facilities/
             margin-top: 10px;
         }
 
-        .facility-text {
+        .facility-text h3{
         margin: 0 0 10px 0;
         color: #2a6496;
         font-size: 18px; /* 小屏幕字体大小 */
+        }
+
+        .facility-text {
+        margin: 0 0 10px 0;
         }
     }
 </style>
