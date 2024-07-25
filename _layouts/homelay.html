@@ -2,10 +2,76 @@
 layout: default
 ---
 
-<div>
-	<img class="img-cover mb-3" src="/assets/images/Q03-YANG.jpg">
-
-	<h1 class="text-center mb-5">{{ site.title }}</h1>
-
-	{{ content }}
+<div class="carousel-container">
+    <div class="carousel">
+        <img src="/assets/images/Q03-YANG-main-01.png" class="active">
+        <img src="/assets/images/Q03-YANG-main-02.jpg">
+        <img src="/assets/images/Q03-YANG-main-03.jpg">
+    </div>
+    <div class="nav">
+        <button class="active" onclick="showImage(0)"></button>
+        <button onclick="showImage(1)"></button>
+        <button onclick="showImage(2)"></button>
+    </div>
 </div>
+
+<h1 class="text-center mb-5">{{ site.title }}</h1>
+
+{{ content }}
+
+<style>
+    .carousel-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+    .carousel img {
+        width: 100%;
+        display: none;
+    }
+    .carousel img.active {
+        display: block;
+    }
+    .nav {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .nav button {
+        background-color: #888;
+        border: none;
+        padding: 5px 10px;
+        margin: 0 2px;
+        cursor: pointer;
+    }
+    .nav button.active {
+        background-color: #444;
+    }
+</style>
+
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel img');
+    const buttons = document.querySelectorAll('.nav button');
+
+    function showImage(index) {
+        images[currentIndex].classList.remove('active');
+        buttons[currentIndex].classList.remove('active');
+        currentIndex = index;
+        images[currentIndex].classList.add('active');
+        buttons[currentIndex].classList.add('active');
+    }
+
+    function nextImage() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        showImage(nextIndex);
+    }
+
+    setInterval(nextImage, 6000);
+
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => showImage(index));
+    });
+</script>
