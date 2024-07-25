@@ -44,6 +44,25 @@ permalink: /highlights/
     .toc a:hover {
         text-decoration: underline;
     }
+
+    /* 浮动按钮样式 */
+    .top-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #2a6496;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-button:hover {
+        background-color: #2a6496;
+    }
 </style>
 
 <body>
@@ -142,5 +161,13 @@ permalink: /highlights/
         
         <!-- Add more highlights as needed -->
         
+        <!-- 浮动按钮 -->
+        <button class="top-button" onclick="scrollToTop()">Top</button>
+
+        <script>
+            // 滚动回到页面顶部的函数
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
 </body>
-</html>
