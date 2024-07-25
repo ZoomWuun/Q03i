@@ -20,8 +20,30 @@ permalink: /highlights/
         margin-top: 10px;
     }
     .highlight h2 {
-        margin: 0 0 10px 0;
-        color: #2a6496;
+    margin: 0 0 10px 0;
+    color: #2a6496;
+    font-size: 24px; /* 默认字体大小 */
+    }
+
+    /* 小屏幕手机 */
+    @media (max-width: 480px) {
+        .highlight h2 {
+            font-size: 18px; /* 小屏幕手机字体大小 */
+        }
+    }
+
+    /* 中等屏幕手机 */
+    @media (max-width: 768px) {
+        .highlight h2 {
+            font-size: 20px; /* 中等屏幕手机字体大小 */
+        }
+    }
+
+    /* 大屏幕手机和小型平板电脑 */
+    @media (max-width: 1024px) {
+        .highlight h2 {
+            font-size: 22px; /* 大屏幕手机和小型平板电脑字体大小 */
+        }
     }
     hr {
         border: 0;
