@@ -2,16 +2,20 @@
 layout: default
 ---
 
-<div class="carousel-container">
-    <div class="carousel">
-        <img src="/assets/images/Q03-YANG-main-01.png" class="active">
-        <img src="/assets/images/Q03-YANG-main-02.jpg">
-        <img src="/assets/images/Q03-YANG-main-03.jpg">
-    </div>
-    <div class="nav">
-        <button class="active" onclick="showImage(0)"></button>
-        <button onclick="showImage(1)"></button>
-        <button onclick="showImage(2)"></button>
+<div class="carousel">
+    <img src="/assets/images/Q03-YANG-main-01.png" alt="Image 1">
+    <div class="carousel-description">描述文字 1</div>
+
+    <img src="/assets/images/Q03-YANG-main-02.jpg" alt="Image 2" style="display:none;">
+    <div class="carousel-description" style="display:none;">描述文字 2</div>
+
+    <img src="/assets/images/Q03-YANG-main-03.jpg" alt="Image 3" style="display:none;">
+    <div class="carousel-description" style="display:none;">描述文字 3</div>
+
+    <div class="carousel-buttons">
+        <span class="carousel-button active" onclick="currentSlide(1)"></span>
+        <span class="carousel-button" onclick="currentSlide(2)"></span>
+        <span class="carousel-button" onclick="currentSlide(3)"></span>
     </div>
 </div>
 
@@ -20,58 +24,91 @@ layout: default
 {{ content }}
 
 <style>
-    .carousel-container {
+    .carousel {
         position: relative;
         max-width: 100%;
         margin: auto;
     }
+
     .carousel img {
         width: 100%;
-        display: none;
+        height: auto;
     }
-    .carousel img.active {
-        display: block;
-    }
-    .nav {
+
+    .carousel-description {
         position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(192, 192, 192, 0.3); /* 浅灰色，透明度30% */
+        color: #771f00;
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 50%;
     }
-    .nav button {
-        background-color: #888;
-        border: none;
-        padding: 5px 10px;
-        margin: 0 2px;
+
+    .carousel-buttons {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        gap: 5px;
+    }
+
+    .carousel-button {
+        height: 15px;
+        width: 15px;
+        background-color: #bbb; /* 灰色 */
+        border-radius: 50%;
+        display: inline-block;
         cursor: pointer;
     }
-    .nav button.active {
-        background-color: #444;
+
+    .carousel-button.active {
+        background-color: #771f00; /* 橙色 */
     }
 </style>
 
 <script>
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.carousel img');
-    const buttons = document.querySelectorAll('.nav button');
+    let slideIndex = 0;
+    let slides = document.querySelectorAll(".carousel img");
+    let descriptions = document.querySelectorAll(".carousel-description");
+    let buttons = document.querySelectorAll(".carousel-button");
 
-    function showImage(index) {
-        images[currentIndex].classList.remove('active');
-        buttons[currentIndex].classList.remove('active');
-        currentIndex = index;
-        images[currentIndex].classList.add('active');
-        buttons[currentIndex].classList.add('active');
+    function showSlide(index) {
+        if (index >= slides.length) slideIndex = 0;
+        if (index < 0) slideIndex = slides.length - 1;
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            descriptions[i].style.display = "none";
+            buttons[i].classList.remove("active");
+        }
+
+        slides[slideIndex].style.display = "block";
+        descriptions[slideIndex].style.display = "block";
+        buttons[slideIndex].classList.add("active");
     }
 
-    function nextImage() {
-        const nextIndex = (currentIndex + 1) % images.length;
-        showImage(nextIndex);
+    function nextSlide() {
+        slideIndex++;
+        showSlide(slideIndex);
     }
 
-    setInterval(nextImage, 6000);
+    function prevSlide() {
+        slideIndex--;
+        showSlide(slideIndex);
+    }
 
-    buttons.forEach((button, index) => {
-        button.addEventListener('click', () => showImage(index));
-    });
+    function currentSlide(index) {
+        slideIndex = index - 1;
+        showSlide(slideIndex);
+    }
+
+    // Auto slide
+    setInterval(() => {
+        nextSlide();
+    }, 6000);
+
+    // Initialize
+    showSlide(slideIndex);
 </script>
