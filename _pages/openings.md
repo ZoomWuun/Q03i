@@ -12,7 +12,7 @@ permalink: /openings/
 
 **一、 导师和课题组简介：**
 
-杨锴，中科院物理所特聘研究员，博士生导师。2009年毕业于山东大学，2015年在中科院物理所获博士学位。博士毕业后，在美国IBM公司的Almaden研究中心从事博士后研究。2021年加入中科院物理所。曾获得IBM公司杰出技术成就奖（IBM Outstanding Technical Achievement Award）和IBM公司研发部门奖（IBM Research Division Award）等奖项。目前主持国家自然科学基金人才项目、中国科学院人才项目、国家自然科学基金面上项目，并承担中国科学院青年团队项目、科技部重点研发计划等。
+杨锴，中科院物理所特聘研究员，博士生导师。2009年毕业于山东大学，2015年在中科院物理所获博士学位。博士毕业后，在美国IBM公司的Almaden研究中心从事博士后研究。2021年加入中科院物理所。曾获得IBM公司杰出技术成就奖(IBM Outstanding Technical Achievement Award)和IBM公司研发部门奖(IBM Research Division Award)等奖项。目前主持国家自然科学基金人才项目、中国科学院人才项目、国家自然科学基金面上项目，并承担中国科学院青年团队项目、科技部重点研发计划等。
 
 主要的研究领域是利用扫描隧道显微术在单原子尺度上对量子材料进行结构表征与物性调控，并进行基于单原子/单分子的量子探测和量子模拟等方面的研究工作，涉及到的领域包括纳米物理、固态量子信息和分子自旋电子学。迄今共发表SCI论文三十余篇，包括Science (1篇)，Nature (1篇)，Nature Nanotechnology (2篇)，Nature Physics (2篇)，Nature Communications (2篇)，Physical Review Letters (3篇)等，并被Nature和Nature Nanotechnology等国际学术杂志作为研究亮点报道。引用次数2100余次，H因子为20。
 
