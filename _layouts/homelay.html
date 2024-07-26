@@ -3,14 +3,20 @@ layout: default
 ---
 
 <div class="carousel">
-    <img src="/assets/images/Q03-YANG-main-01.png" alt="Image 1">
-    <div class="carousel-description">描述文字 1</div>
+    <a href="/highlights#Nanotechnology_2024">
+        <img src="/assets/images/Q03-YANG-main-01.png" alt="Image 1">
+    </a>
+    <div class="carousel-description">Construction of topological quantum magnets from atomic spins on surfaces</div>
 
-    <img src="/assets/images/Q03-YANG-main-02.jpg" alt="Image 2" style="display:none;">
-    <div class="carousel-description" style="display:none;">描述文字 2</div>
+    <a href="/highlights#NatureCommunications_2021">
+        <img src="/assets/images/Q03-YANG-main-02.jpg" alt="Image 2" style="display:none;">
+    </a>
+    <div class="carousel-description" style="display:none;">Simulating quantum magnetism with atomically precise spin arrays</div>
 
-    <img src="/assets/images/Q03-YANG-main-03.jpg" alt="Image 3" style="display:none;">
-    <div class="carousel-description" style="display:none;">描述文字 3</div>
+    <a href="/highlights#Science_2019">
+        <img src="/assets/images/Q03-YANG-main-03.jpg" alt="Image 3" style="display:none;">
+    </a>
+    <div class="carousel-description" style="display:none;">Coherent surface spin manipulation</div>
 
     <div class="carousel-buttons">
         <span class="carousel-button active" onclick="currentSlide(1)"></span>
@@ -20,12 +26,9 @@ layout: default
 </div>
 
 <div class="highlight">
-    <h2>Scanning Tunneling Microscopy of 
-        Quantum Magnets and Quantum Materials</h2>
-    
-    <h3><a href="https://english.iop.cas.cn/", target="_blank">Q03, Institute of Physics, Chinese Academy of Sciences</a></h3>
+    <h2>Scanning Tunneling Microscopy of Quantum Magnets and Quantum Materials</h2>
+    <h3><a href="https://english.iop.cas.cn/" target="_blank">Q03, Institute of Physics, Chinese Academy of Sciences</a></h3>
 </div>
-
 
 {{ content }}
 
@@ -35,20 +38,20 @@ layout: default
         line-height: 1.6;
     }
     .highlight {
-            margin: 20px 0;
+        margin: 20px 0;
     }
     .highlight h2 {
-    margin: 0 0 10px 0;
-    color: #2a6496;
-    font-size: 20px; /* 默认字体大小 */
-    text-align: justify; /* 文字两边对齐 */
-    font-weight: bold; /* 加粗标题 */
+        margin: 0 0 10px 0;
+        color: #2a6496;
+        font-size: 20px; /* 默认字体大小 */
+        text-align: justify; /* 文字两边对齐 */
+        font-weight: bold; /* 加粗标题 */
     }
     .highlight h3 {
-    margin: 0 0 10px 0;
-    font-size: 16px;
-    text-align: center; /* 文字居中 */
-    font-weight: bold; /* 加粗标题 */
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        text-align: center; /* 文字居中 */
+        font-weight: bold; /* 加粗标题 */
     }
     /* 小屏幕手机 */
     @media (max-width: 480px) {
@@ -59,7 +62,7 @@ layout: default
     /* 中等屏幕手机 */
     @media (max-width: 768px) {
         .highlight h2 {
-            font-size: 18px; /* 中等屏幕手机字体大小 */
+            font-size: 16px; /* 中等屏幕手机字体大小 */
         }
     }
     /* 大屏幕手机和小型平板电脑 */
@@ -75,26 +78,26 @@ layout: default
         margin: auto;
     }
 
-    .carousel img {
+    .carousel a img {
         width: 100%;
         height: auto;
     }
 
     .carousel-description {
         position: absolute;
-        bottom: 10px;
-        left: 10px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         background-color: rgba(192, 192, 192, 0.3); /* 浅灰色，透明度30% */
         color: #771f00;
-        padding: 10px;
-        border-radius: 5px;
-        max-width: 50%;
+        padding: 16px;
+        box-sizing: border-box;
     }
 
     .carousel-buttons {
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        bottom: 16px;
+        right: 16px;
         display: flex;
         gap: 5px;
     }
@@ -115,7 +118,7 @@ layout: default
 
 <script>
     let slideIndex = 0;
-    let slides = document.querySelectorAll(".carousel img");
+    let slides = document.querySelectorAll(".carousel a img");
     let descriptions = document.querySelectorAll(".carousel-description");
     let buttons = document.querySelectorAll(".carousel-button");
 
@@ -124,12 +127,12 @@ layout: default
         if (index < 0) slideIndex = slides.length - 1;
 
         for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+            slides[i].parentElement.style.display = "none";
             descriptions[i].style.display = "none";
             buttons[i].classList.remove("active");
         }
 
-        slides[slideIndex].style.display = "block";
+        slides[slideIndex].parentElement.style.display = "block";
         descriptions[slideIndex].style.display = "block";
         buttons[slideIndex].classList.add("active");
     }
