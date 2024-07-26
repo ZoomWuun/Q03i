@@ -19,15 +19,56 @@ layout: default
     </div>
 </div>
 
-<h2 class="text-center mb-5">Scanning Tunneling Microscopy of <br>
-    Quantum Magnets and Quantum Materials</h2>
-
-<h3 >Institute of Physics, Chinese Academy of Sciences</h3>
+<div class="highlight">
+    <h2>Scanning Tunneling Microscopy of 
+        Quantum Magnets and Quantum Materials</h2>
+    
+    <h3><a href="https://english.iop.cas.cn/", target="_blank">Q03, Institute of Physics, Chinese Academy of Sciences</a></h3>
+</div>
 
 
 {{ content }}
 
 <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    .highlight {
+            margin: 20px 0;
+    }
+    .highlight h2 {
+    margin: 0 0 10px 0;
+    color: #2a6496;
+    font-size: 20px; /* 默认字体大小 */
+    text-align: justify; /* 文字两边对齐 */
+    font-weight: bold; /* 加粗标题 */
+    }
+    .highlight h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-align: center; /* 文字居中 */
+    font-weight: bold; /* 加粗标题 */
+    }
+    /* 小屏幕手机 */
+    @media (max-width: 480px) {
+        .highlight h2 {
+            font-size: 16px; /* 小屏幕手机字体大小 */
+        }
+    }
+    /* 中等屏幕手机 */
+    @media (max-width: 768px) {
+        .highlight h2 {
+            font-size: 18px; /* 中等屏幕手机字体大小 */
+        }
+    }
+    /* 大屏幕手机和小型平板电脑 */
+    @media (max-width: 1024px) {
+        .highlight h2 {
+            font-size: 20px; /* 大屏幕手机和小型平板电脑字体大小 */
+        }
+    }
+
     .carousel {
         position: relative;
         max-width: 100%;
