@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
     <nav class="navbar navbar-expand-sm navbar-light px-0 fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Navbar brand -->
             <a class="navbar-brand" href="/" id="navbar-brand">{{ site.title }}</a>
 
@@ -49,6 +49,7 @@
 
     .navbar-brand {
         transition: color 0.3s, opacity 0.3s;
+        padding-left: 15px; /* Adjust this value to match the padding of your content */
     }
 
     .navbar-brand.scrolled {
@@ -71,11 +72,20 @@
         margin-right: 10px; /* Adjust spacing between nav items */
     }
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1140px; /* Adjust to match your content width */
+    .container-fluid {
+        padding-left: 15px; /* Adjust this value to match the padding of your content */
+        padding-right: 15px; /* Adjust this value to match the padding of your content */
+    }
+
+    @media (min-width: 768px) {
+        .navbar-brand {
+            padding-left: 30px; /* Adjust this value to match the padding of your content on larger screens */
+        }
+
+        .container-fluid {
+            padding-left: 30px; /* Adjust this value to match the padding of your content on larger screens */
+            padding-right: 30px; /* Adjust this value to match the padding of your content on larger screens */
+        }
     }
 </style>
 
