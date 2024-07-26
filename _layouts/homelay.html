@@ -3,21 +3,24 @@ layout: default
 ---
 
 <div class="carousel">
-    <a href="/highlights#Nanotechnology_2024">
-        <img src="/assets/images/Q03-YANG-main-01.png" alt="Image 1">
-    </a>
-    <div class="carousel-description">Topological quantum magnets</div>
-
-    <a href="/highlights#NatureCommunications_2021">
-        <img src="/assets/images/Q03-YANG-main-02.png" alt="Image 2" style="display:none;">
-    </a>
-    <div class="carousel-description" style="display:none;">Spin RVB states</div>
-
-    <a href="/highlights#Science_2019">
-        <img src="/assets/images/Q03-YANG-main-03.png" alt="Image 3" style="display:none;">
-    </a>
-    <div class="carousel-description" style="display:none;">Coherent spin manipulation</div>
-
+    <div class="carousel-slide">
+        <a href="/highlights#Nanotechnology_2024">
+            <img src="/assets/images/Q03-YANG-main-01.png" alt="Image 1">
+        </a>
+        <div class="carousel-description">Topological quantum magnets</div>
+    </div>
+    <div class="carousel-slide" style="display:none;">
+        <a href="/highlights#NatureCommunications_2021">
+            <img src="/assets/images/Q03-YANG-main-02.png" alt="Image 2">
+        </a>
+        <div class="carousel-description">Spin RVB states</div>
+    </div>
+    <div class="carousel-slide" style="display:none;">
+        <a href="/highlights#Science_2019">
+            <img src="/assets/images/Q03-YANG-main-03.png" alt="Image 3">
+        </a>
+        <div class="carousel-description">Coherent spin manipulation</div>
+    </div>
     <div class="carousel-buttons">
         <span class="carousel-button active" onclick="currentSlide(1)"></span>
         <span class="carousel-button" onclick="currentSlide(2)"></span>
@@ -75,7 +78,11 @@ layout: default
         margin: auto;
     }
 
-    .carousel a img {
+    .carousel-slide {
+        display: none;
+    }
+
+    .carousel-slide img {
         width: 100%;
         height: auto;
     }
@@ -87,15 +94,15 @@ layout: default
         width: 100%;
         background-color: rgba(192, 192, 192, 0.3);
         color: #771f00;
-        padding: 8px 16px; /* 调整此处来减小文字框的高度 */
+        padding: 10px;
         box-sizing: border-box;
-        font-size: 16px; /* 文字大小 */
+        font-size: 16px;
     }
 
     .carousel-buttons {
         position: absolute;
-        bottom: 16px;
-        right: 16px;
+        bottom: 10px;
+        right: 10px;
         display: flex;
         gap: 5px;
     }
@@ -116,8 +123,7 @@ layout: default
 
 <script>
     let slideIndex = 0;
-    let slides = document.querySelectorAll(".carousel a img");
-    let descriptions = document.querySelectorAll(".carousel-description");
+    let slides = document.querySelectorAll(".carousel-slide");
     let buttons = document.querySelectorAll(".carousel-button");
 
     function showSlide(index) {
@@ -125,13 +131,11 @@ layout: default
         if (index < 0) slideIndex = slides.length - 1;
 
         for (let i = 0; i < slides.length; i++) {
-            slides[i].parentElement.style.display = "none";
-            descriptions[i].style.display = "none";
+            slides[i].style.display = "none";
             buttons[i].classList.remove("active");
         }
 
-        slides[slideIndex].parentElement.style.display = "block";
-        descriptions[slideIndex].style.display = "block";
+        slides[slideIndex].style.display = "block";
         buttons[slideIndex].classList.add("active");
     }
 
@@ -150,9 +154,11 @@ layout: default
         showSlide(slideIndex);
     }
 
+    // Auto slide
     setInterval(() => {
         nextSlide();
     }, 6000);
 
+    // Initialize
     showSlide(slideIndex);
 </script>
