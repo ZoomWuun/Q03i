@@ -27,7 +27,7 @@ layout: default
 
 <div class="highlight">
     <h2>Scanning Tunneling Microscopy of Quantum Magnets and Quantum Materials</h2>
-    <h3><a href="//english.iop.cas.cn/" target="_blank">Q03, Institute of Physics, Chinese Academy of Sciences</a></h3>
+    <h3><a href="https://english.iop.cas.cn/" target="_blank">Q03, Institute of Physics, Chinese Academy of Sciences</a></h3>
 </div>
 
 {{ content }}
@@ -43,32 +43,29 @@ layout: default
     .highlight h2 {
         margin: 0 0 10px 0;
         color: #2a6496;
-        font-size: 20px; /* 默认字体大小 */
-        text-align: center; /* 文字两边对齐 */
-        font-weight: bold; /* 加粗标题 */
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
     }
     .highlight h3 {
         margin: 0 0 10px 0;
         font-size: 16px;
-        text-align: center; /* 文字居中 */
-        font-weight: bold; /* 加粗标题 */
+        text-align: center;
+        font-weight: bold;
     }
-    /* 小屏幕手机 */
     @media (max-width: 480px) {
         .highlight h2 {
-            font-size: 16px; /* 小屏幕手机字体大小 */
+            font-size: 16px;
         }
     }
-    /* 中等屏幕手机 */
     @media (max-width: 768px) {
         .highlight h2 {
-            font-size: 16px; /* 中等屏幕手机字体大小 */
+            font-size: 16px;
         }
     }
-    /* 大屏幕手机和小型平板电脑 */
     @media (max-width: 1024px) {
         .highlight h2 {
-            font-size: 20px; /* 大屏幕手机和小型平板电脑字体大小 */
+            font-size: 20px;
         }
     }
 
@@ -88,10 +85,11 @@ layout: default
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(192, 192, 192, 0.3); /* 浅灰色，透明度30% */
+        background-color: rgba(192, 192, 192, 0.3);
         color: #771f00;
-        padding: 16px;
+        padding: 8px 16px; /* 调整此处来减小文字框的高度 */
         box-sizing: border-box;
+        font-size: 16px; /* 文字大小 */
     }
 
     .carousel-buttons {
@@ -105,14 +103,14 @@ layout: default
     .carousel-button {
         height: 15px;
         width: 15px;
-        background-color: #bbb; /* 灰色 */
+        background-color: #bbb;
         border-radius: 50%;
         display: inline-block;
         cursor: pointer;
     }
 
     .carousel-button.active {
-        background-color: #771f00; /* 橙色 */
+        background-color: #771f00;
     }
 </style>
 
@@ -152,11 +150,9 @@ layout: default
         showSlide(slideIndex);
     }
 
-    // Auto slide
     setInterval(() => {
         nextSlide();
     }, 6000);
 
-    // Initialize
     showSlide(slideIndex);
 </script>
