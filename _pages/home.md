@@ -15,9 +15,9 @@ The ability to drive ESR of individual atoms using STM provided a major step for
 
 **References**
 
-[1]  S. Baumann et al. Science 350, 417 (2015)
-[2]  F. Natterer et al. Nature 543, 226 (2017)
-[3]  K. Yang et al. Nat. Commun. 12, 993 (2021)
+[1]  S. Baumann et al. Science 350, 417 (2015)  
+[2]  F. Natterer et al. Nature 543, 226 (2017)  
+[3]  K. Yang et al. Nat. Commun. 12, 993 (2021)  
 [4]  K. Yang et al. Science 366, 509 (2019)
 
 
